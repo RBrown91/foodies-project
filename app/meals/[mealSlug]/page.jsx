@@ -29,7 +29,11 @@ const MealsSlugPage = ({ params }) => {
     <>
       <header className={classes.header}>
         <div className={classes.image}>
-          <Image fill src={meal.image} alt={meal.title} />
+          <Image
+            fill
+            src={`https://ryanbrown-nextjs-foodapp.s3.eu-north-1.amazonaws.com/${image}`}
+            alt={meal.title}
+          />
         </div>
         <div className={classes.headerText}>
           <h1>{meal.title}</h1>
